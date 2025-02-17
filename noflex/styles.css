@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
     height: 70px;
     gap: 20px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -84,8 +84,12 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: bolder;
+    cursor: pointer;
 }
 
+.sign-in:hover {
+    background-color: #b20710;
+}
 
 /* hero section */
 .hero-bg {
@@ -251,7 +255,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .swiper-slide img {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 5px;
     padding-right: 20px;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -490,6 +494,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #b20710;
 }
 
+/* footer */
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -502,6 +507,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     flex: 1;
     gap: 20px;
+    padding-left: 100px;
 }
 
 .footer-right {
@@ -509,6 +515,7 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: flex-end;
     flex: 2;
     gap: 20px;
+    padding-right: 100px;
 }
 
 .footer-menu ul {
