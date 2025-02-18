@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact-Us</title>
+    <title>Contact Us | Nutflex Help Center</title>
 
     <link rel="stylesheet" href="contact-us.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
     <h1>Contact Us</h1>
     <p>Tell us more and we'll find the best solution for you</p>
     <input type="email" placeholder="Describe your issue">
 
     <section class="quick-links">
-        <h2>Quick Links</h2>
+        <h3>Quick Links</h3>
         <div class="link">
             <img src="icons/quick-link-1" alt="Icon">
             <a class="link-name">Reset password</a>
