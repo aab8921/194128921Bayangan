@@ -6,6 +6,7 @@
     <title>Nutflex Help Center</title>
 
     <link rel="stylesheet" href="help-center.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
 </head>
 <body> 
     <div id="header-container"></div>
@@ -16,5 +17,20 @@
                 document.getElementById('header-container').innerHTML = data;
             });
     </script>
+
+    <main>
+        <section class="help-center-hero">
+            <h1>How can we help?</h1>
+            <input type="search" placeholder="Type a question, topic or issue">
+            <p>
+                Popular topics: 
+                <a class="popular-topic" href="#">How to sign up for Nutflex</a>,
+                <a class="popular-topic" href="#">Plans and Pricing</a>,
+                <a class="popular-topic" href="#">Can't sign in to Nutflex</a>,
+                <a class="popular-topic" href="#">Parental controls on Nutflex</a>,
+            </p>
+            <a href="#">Explore Topics</a>
+        </section>
+    </main>
 </body>
 </html>
