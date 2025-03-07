@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -20,7 +21,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <button id="dark-mode-toggle">Dark Mode</button>
+        <button id="dark-mode-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <span>Dark Mode</span>
+        </button>
     </header>
 
     <main>
@@ -40,54 +44,236 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <p>
-                I am passionate developer with a focus on educational technology and AI-driven solutions. I have experience in web development, AI integration, and game design, particularly in creating tools that help teachers, students, and parents.<br><br>
-                I have built websites using WordPress.org and am currently expanding my skills in manual coding to develop more customized and dynamic web solutions. My latest project, ARA (Automated Reporting App), streamlines special needs education reporting using AI, making documentation and assessments more efficient for educators. <br><br>
-                I'm also studying Information Technology, majoring in Network Security, where I'm learning about cybersecurity, system administration, and network infrastructure. Additionally, I enjoy experimenting with game development using Godot, and I'm designing a programming-based educational platformer for kids. <br><br>
-                Beyond coding, I have a strong interest in basketball, South Korean culture, and content creation. I'm also exploring YouTube as a way to share insights and tutorials related to technology and education. <br><br>
-                Let's connect and create something impactful together! 🚀
-            </p>
+            <div class="about-container">
+                <div class="about-header">
+                    <div class="about-image">
+                        <img src="images/profile.jpg" alt="Abuel Bayangan">
+                        <div class="about-social">
+                            <a href="https://github.com/aab8921" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="about-intro">
+                        <h3>👋 Hello World!</h3>
+                        <p class="tagline">Passionate about securing the digital world, one line of code at a time.</p>
+                    </div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cybersecurity Expert</h3>
+                        <p>Specializing in network security and penetration testing, I'm dedicated to protecting digital assets and infrastructure from emerging threats.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Full Stack Developer</h3>
+                        <p>Creating secure, scalable web applications using modern technologies and best practices in web security.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Continuous Learner</h3>
+                        <p>Currently pursuing Information Technology with a focus on Network Security, always staying updated with the latest security trends.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Game Developer</h3>
+                        <p>Developing educational games using Godot, combining programming education with interactive entertainment.</p>
+                    </div>
+                </div>
+
+                <div class="about-interests">
+                    <h3>When I'm Not Coding</h3>
+                    <div class="interest-tags">
+                        <span><i class="fas fa-basketball-ball"></i> Basketball</span>
+                        <span><i class="fas fa-video"></i> Content Creation</span>
+                        <span><i class="fas fa-globe-asia"></i> Korean Culture</span>
+                        <span><i class="fas fa-book"></i> Tech Education</span>
+                        <span><i class="fas fa-robot"></i> AI & Machine Learning</span>
+                    </div>
+                </div>
+
+                <div class="about-cta">
+                    <p>Interested in collaborating or have a project in mind?</p>
+                    <a href="#contact" class="btn">Let's Connect <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>My project is a project called a project. This wonderful project is wonderful because the project is wonderful.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>My project is a project called a project. This wonderful project is wonderful because the project is wonderful.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <p>My project is a project called a project. This wonderful project is wonderful because the project is wonderful.</p>
-                <a href="#">View Project</a>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>SecureNet</h3>
+                    <p>A comprehensive network security tool that monitors and protects against unauthorized access, malware, and other cyber threats in real-time.</p>
+                    <div class="project-tags">
+                        <span>Network Security</span>
+                        <span>Real-time Monitoring</span>
+                        <span>Threat Detection</span>
+                    </div>
+                    <a href="#" class="btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>WebGuard</h3>
+                    <p>An advanced web application firewall that provides robust protection for websites against SQL injection, cross-site scripting, and other common web vulnerabilities.</p>
+                    <div class="project-tags">
+                        <span>Web Security</span>
+                        <span>WAF</span>
+                        <span>XSS Protection</span>
+                    </div>
+                    <a href="#" class="btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <h3>PhishTracker</h3>
+                    <p>A phishing detection and prevention system that uses machine learning to identify and block phishing attempts, ensuring the safety of user data.</p>
+                    <div class="project-tags">
+                        <span>Machine Learning</span>
+                        <span>Anti-Phishing</span>
+                        <span>Data Protection</span>
+                    </div>
+                    <a href="#" class="btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>CodeSecure</h3>
+                    <p>A static code analysis tool that scans your codebase for security vulnerabilities and provides actionable insights to improve code security.</p>
+                    <div class="project-tags">
+                        <span>Code Analysis</span>
+                        <span>Security Testing</span>
+                        <span>DevSecOps</span>
+                    </div>
+                    <a href="#" class="btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>HTML</li>
-                <li>HTML</li>
-                <li>HTML</li>
-                <li>HTML</li>
-            </ul>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Network Security</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-name">Penetration Testing</span><div class="skill-bar"><div class="skill-progress" style="width: 96%"></div></div></li>
+                        <li><span class="skill-name">Firewall Configuration</span><div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div></li>
+                        <li><span class="skill-name">Intrusion Detection Systems</span><div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div></li>
+                        <li><span class="skill-name">Network Monitoring</span><div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div></li>
+                        <li><span class="skill-name">Vulnerability Assessment</span><div class="skill-bar"><div class="skill-progress" style="width: 83%"></div></div></li>
+                        <li><span class="skill-name">Incident Response</span><div class="skill-bar"><div class="skill-progress" style="width: 87%"></div></div></li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Web Development</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-name">HTML5/CSS3</span><div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div></li>
+                        <li><span class="skill-name">JavaScript/TypeScript</span><div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div></li>
+                        <li><span class="skill-name">React.js</span><div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div></li>
+                        <li><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div></li>
+                        <li><span class="skill-name">Web Security (OWASP)</span><div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div></li>
+                        <li><span class="skill-name">API Development</span><div class="skill-bar"><div class="skill-progress" style="width: 86%"></div></div></li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools & Technologies</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-name">Wireshark</span><div class="skill-bar"><div class="skill-progress" style="width: 89%"></div></div></li>
+                        <li><span class="skill-name">Metasploit</span><div class="skill-bar"><div class="skill-progress" style="width: 87%"></div></div></li>
+                        <li><span class="skill-name">Git/GitHub</span><div class="skill-bar"><div class="skill-progress" style="width: 91%"></div></div></li>
+                        <li><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-progress" style="width: 84%"></div></div></li>
+                        <li><span class="skill-name">Linux Systems</span><div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div></li>
+                        <li><span class="skill-name">AWS/Cloud Security</span><div class="skill-bar"><div class="skill-progress" style="width: 83%"></div></div></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: gg@gg.com</p>
-            <p>Github: <a href="#">aab8921</a></p>
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>aab8921@students.uc-bcf.edu.ph</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Manila, Philippines</p>
+                    </div>
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://github.com/aab8921" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://dev.to" target="_blank"><i class="fab fa-dev"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2025 John Doe. All Rights Reserved.</p>
-    </footer>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abuel Bayangan</h3>
+                    <p>Cybersecurity Professional & Web Developer</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Let's Connect</h3>
+                    <div class="footer-social">
+                        <a href="https://github.com/aab8921" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abuel Bayangan. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
